@@ -38,7 +38,6 @@ const Navbar = () => {
                 "party",
                 "preise",
                 "fotos",
-                "party-blog",
                 "kontakt",
             ];
 
@@ -71,11 +70,10 @@ const Navbar = () => {
     // Nav items: id here represents the path or the section id
     const navItems = [
         { label: "Home", id: "/" },
-        { label: "Über uns", id: "über-uns" },
-        { label: "Party", id: "party" },
+        { label: "Über uns", id: "/über-uns" },
+        { label: "Party", id: "/party" },
         { label: "Preise", id: "/preise" },
-        { label: "Fotos", id: "fotos" },
-        { label: "Party-Blog", id: "party-blog" },
+        { label: "Fotos", id: "/gallerie" },
         { label: "Kontakt", id: "/kontakt" },
     ];
 

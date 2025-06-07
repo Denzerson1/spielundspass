@@ -4,21 +4,24 @@ import LandingPage from './pages/LandingPage';
 import Navbar from './components/Navbar';
 import Contact from './pages/Contact';
 import Preise from './pages/Preise';
+import About from './pages/About';
 import Footer from './components/Footer';
-import { Analytics } from "@vercel/analytics/react"
+import Gallerie from './pages/Photos';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <Analytics />
+      
       <BrowserRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/preise" element={<LandingPage />} />
           <Route path="/kontakt" element={<Contact />} />
+          <Route path="/über-uns" element={<About />} />
           <Route path="/preise" element={<Preise />} />
+          <Route path="/gallerie" element={<Gallerie />} />
+
         </Routes>
       </BrowserRouter>
       <Footer />
